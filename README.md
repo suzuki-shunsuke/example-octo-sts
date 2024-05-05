@@ -7,9 +7,23 @@ Example of [Octo STS](https://github.com/octo-sts)
 
 ## How to try Octo STS
 
-1. [Fork this repository](https://github.com/suzuki-shunsuke/example-octo-sts/fork)
+1. [Create a repository using this template repository](https://github.com/new?template_name=example-octo-sts&template_owner=suzuki-shunsuke)
 1. [Install the GitHub App Octo STS](https://github.com/apps/octo-sts) to the forked repository
-1. Create a pull request, then [the GitHub Actions Workflow](.github/workflows/pull_request.yaml) is run and a GitHub Access token is issued by [octo-sts/action](https://github.com/octo-sts/action)
+1. Fix `scope` and `subject` and create a pull request
+
+```sh
+bash fix.sh <new repo full name>
+```
+
+e.g.
+
+```sh
+bash fix.sh szksh-lab/example-octo-sts
+```
+
+CI would fail because the trust policy of the base branch isn't fixed yet, but please ignore the failure and merge the pull request.
+
+4. Create a pull request again, then [the GitHub Actions Workflow](.github/workflows/pull_request.yaml) is run and a GitHub Access token is issued by [octo-sts/action](https://github.com/octo-sts/action)
 
 The following screenshot is a comment posted using a GitHub access token issued by octo-sts/action.
 
