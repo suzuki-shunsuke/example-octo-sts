@@ -11,7 +11,7 @@ jobs:
         id: octo-sts
         with:
           scope: suzuki-shunsuke/example-octo-sts
-          identity: foo
+          identity: pull_request
       - env:
           GITHUB_TOKEN: ${{ steps.octo-sts.outputs.token }}
         run: |
