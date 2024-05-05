@@ -8,7 +8,7 @@ Example of [Octo STS](https://github.com/octo-sts)
 ## How to try Octo STS
 
 1. [Create a repository using this template repository](https://github.com/new?template_name=example-octo-sts&template_owner=suzuki-shunsuke)
-1. [Install the GitHub App Octo STS](https://github.com/apps/octo-sts) to the forked repository
+1. [Install the GitHub App Octo STS](https://github.com/apps/octo-sts) to the created repository
 1. Fix `scope` and `subject` and create a pull request
 
 ```sh
