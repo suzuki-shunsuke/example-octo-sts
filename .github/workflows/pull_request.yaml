@@ -3,6 +3,7 @@ name: pull_request
 on: pull_request
 jobs:
   foo:
+    timeout-minutes: 30
     runs-on: ubuntu-latest
     permissions:
       id-token: write # Needed to federate tokens.
